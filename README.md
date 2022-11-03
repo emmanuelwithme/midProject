@@ -1,7 +1,7 @@
 # midProject
-雲端應用程式期中報告－各鄉鎮市區電子發票B2C消費分析
-所得房價消費分析-鄉鎮市區電子發票B2C開立資料集: https://data.gov.tw/dataset/36862
-github in vs code教學: https://vscode.github.com/
+雲端應用程式期中報告－各鄉鎮市區電子發票B2C消費分析  
+所得房價消費分析-鄉鎮市區電子發票B2C開立資料集: https://data.gov.tw/dataset/36862  
+github in vs code教學: https://vscode.github.com/  
 
 ## 工作內容
 * 圓餅圖：
@@ -14,5 +14,5 @@ github in vs code教學: https://vscode.github.com/
 - [ ] 圓餅圖1：李揚
 - [ ] 圓餅圖2：李旻勳
 - [ ] 折線圖：童筱真
-- [ ] 長條圖：陳遠謀
+- [ ] 長條圖：陳遠謀  
 (完成要打勾，[X]即為打勾)
