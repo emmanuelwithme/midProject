@@ -1,49 +1,49 @@
 {% extends "base.html" %}
 
 {% block tittle %}
-<title>選擇地區</title>
+<title>月成長率長條圖比較</title>
 {% endblock %}
 
 {% block content %}
 <div class="text-bg-primary p-3 fs-1">
-    選擇地區
+    比較2個不同地區產業的月成長率長條圖
 </div>
 <div class="container">
     <form action="/monthlyGrowthRateVS" method="get">
         <div class="container">
             <h2>請選擇地區1</h2>
             縣市名稱: 
-            <select id="city1" name="city1">
+            <select class="form-select" id="city1" name="city1">
                 <option value="">請選擇</option>
             </select>
             <br>
             鄉鎮市區名稱: (先隱藏，選完縣市名稱後再出現)
-            <select id="district1" name="district1" style="display:none;">
+            <select class="form-select" id="district1" name="district1" style="display:none;">
             </select>
             <br>
             行業名稱: (先隱藏，選完鄉鎮市區名稱後再出現)
-            <select id="industry1" name="industry1" style="display:none;">
+            <select class="form-select" id="industry1" name="industry1" style="display:none;">
             </select>
             <br>
         </div>
         <div class="container">
             <h2>請選擇地區2</h2>
             縣市名稱: 
-            <select id="city2" name="city2">
+            <select class="form-select" id="city2" name="city2">
                 <option value="">請選擇</option>
             </select>
             <br>
             鄉鎮市區名稱: (先隱藏，選完縣市名稱後再出現)
-            <select id="district2" name="district2" style="display:none;">
+            <select class="form-select" id="district2" name="district2" style="display:none;">
             </select>
             <br>
             行業名稱: (先隱藏，選完鄉鎮市區名稱後再出現)
-            <select id="industry2" name="industry2" style="display:none;">
+            <select class="form-select" id="industry2" name="industry2" style="display:none;">
             </select>
             <br>
         </div>
 
-        <button type="submit">送出</button>
+        <button class="btn btn-outline-success" type="submit">送出</button>
     </form>
 
     <script type='text/javascript'>
@@ -63,7 +63,7 @@
                     });
                 },
                 error: function (request, error) {
-                    alert("request: ", request, "error: ", error, '\n', "request failed!");
+                    alert("request failed!");
                 }
             });
 
@@ -91,7 +91,7 @@
                         });
                     },
                     error: function (request, error) {
-                        alert("request: ", request, "error: ", error, '\n', "request failed!");
+                        alert("request failed!");
                     }
                 });
             });
@@ -120,7 +120,7 @@
                         });
                     },
                     error: function (request, error) {
-                        alert("request: ", request, "error: ", error, '\n', "request failed!");
+                        alert("request failed!");
                     }
                 });
             });
@@ -138,7 +138,7 @@
                     });
                 },
                 error: function (request, error) {
-                    alert("request: ", request, "error: ", error, '\n', "request failed!");
+                    alert("request failed!");
                 }
             });
 
@@ -166,7 +166,7 @@
                         });
                     },
                     error: function (request, error) {
-                        alert("request: ", request, "error: ", error, '\n', "request failed!");
+                        alert("request failed!");
                     }
                 });
             });
@@ -195,7 +195,7 @@
                         });
                     },
                     error: function (request, error) {
-                        alert("request: ", request, "error: ", error, '\n', "request failed!");
+                        alert("request failed!");
                     }
                 });
             });

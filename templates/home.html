@@ -1,11 +1,57 @@
-<!DOCTYPE html>
-{% extends 'base.html' %}
+{% extends 'base.html'%}
 
 {% block tittle %}
-<title>home</title>
+<title>消費風向站</title>
 {% endblock %}
 
 {% block content %}
-<h1>Hello</h1>
-<h2>歡迎來到主頁</h2>
+<div class="text-bg-primary fs-1 text-center">歡迎來到消費風向站</div>
+<div class="container">
+    <div class="row justify-content-around text-center">
+        <a href="./pieChartASelectDistrict" role="button" class="btn btn-outline-success col-4 p-3 fs-2">1. 分析指定縣市、鄉鎮市區各產業的占比</a>
+        <a href="./pieChartBSelectDistrict" role="button" class="btn btn-outline-success col-4 p-3 fs-2">2. 分析指定縣市、產業在各鄉鎮市區的占比</a>
+        <a href="./page3" role="button" class="btn btn-outline-success col-4 p-3 fs-2">3. 指定縣市、鄉鎮市區、產業的成長折線圖</a>
+        <a href="./selectDistrict" role="button" class="btn btn-outline-success col-4 p-3 fs-2">4. 分析該產業在該地區的月成長率長條圖</a>
+        <a href="./selectDistrictVS" role="button" class="btn btn-outline-success col-4 p-3 fs-2">5. 比較2個不同地區產業的月成長率長條圖</a>
+    </div>
+    <table class="table table-striped table-bordered table-hover hover-primary">
+        <thead>
+            <tr>
+                <th scope="col">項目</th>
+                <th scope="col">完成人</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1. 分析指定縣市、鄉鎮市區各產業的占比</th>
+                <td>李揚</td>
+            </tr>
+            <tr>
+                <th scope="row">2. 分析指定縣市、產業在各鄉鎮市區的占比</th>
+                <td>李旻勳</td>
+            </tr>
+            <tr>
+                <th scope="row">3. 指定縣市、鄉鎮市區、產業的成長折線圖</th>
+                <td>童筱真</td>
+            </tr>
+            <tr>
+                <th scope="row">4. 分析該產業在該地區的月成長率長條圖</th>
+                <td>陳遠謀</td>
+            </tr>
+            <tr>
+                <th scope="row">5. 比較2個不同地區產業的月成長率長條圖</th>
+                <td>陳遠謀</td>
+            </tr>
+            <tr>
+                <th scope="row">合併修改大家的程式碼</th>
+                <td>陳遠謀</td>
+            </tr>
+            <tr>
+                <th scope="row">製作網頁導覽</th>
+                <td>陳遠謀</td>
+            </tr>
+        </tbody>
+    </table>
+    <a class="btn btn-outline-success" href="https://github.com/emmanuelwithme/midProject">see code in github</a>
+</div>
 {% endblock %}

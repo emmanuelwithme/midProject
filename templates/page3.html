@@ -1,16 +1,16 @@
 {% extends "base.html" %}
 
 {% block tittle %}
-<title>月成長率長條圖</title>
+<title>選擇地區</title>
 {% endblock %}
 
 {% block content %}
 <div class="text-bg-primary p-3 fs-1">
-    分析該產業在該地區的月成長率長條圖
+    分析該產業在該地區的成長折線圖
 </div>
 <div class="container">
     <h2>請選擇地區</h2>
-    <form action="/monthlyGrowthRate" method="get">
+    <form action="/page3" method="post">
         縣市名稱: 
         <select class="form-select" id="city" name="city">
             <option value="">請選擇</option>
@@ -24,7 +24,7 @@
         <select class="form-select" id="industry" name="industry" style="display:none;">
         </select>
         <br>
-        <button class="btn btn-outline-success" type="submit">送出</button>
+        <input class="btn btn-outline-success" type="submit" name="send" value="送出">
     </form>
 
     <script type='text/javascript'>
